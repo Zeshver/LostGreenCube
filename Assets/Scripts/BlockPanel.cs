@@ -7,7 +7,7 @@ namespace Runner
     {
         [SerializeField] private int m_IndexBlockPanel;
 
-        private void Start()
+        private void Update()
         {
             if (m_IndexBlockPanel < LevelSequenceController.Instance.m_PlayerSaveData.m_LevelIndex)
             {

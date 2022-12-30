@@ -1,14 +1,4 @@
 mergeInto(LibraryManager.library, {
-
-  Hello: function () {
-    window.alert("Hello, world!");
-	console.log("Hello, world!");
-  },
-  
-  GetPlayerData: function () {
-	myGameInstance.SendMessage('MainMenu', 'SetName', player.getName());
-	myGameInstance.SendMessage('MainMenu', 'SetPhoto', player.getPhoto("medium"));
-  },
   
   RateGame: function () {
     ysdk.feedback.canReview()
@@ -43,15 +33,7 @@ mergeInto(LibraryManager.library, {
            lb.setLeaderboardScore('Level', value);
         }); 
   },
-  
-  GetLang: function(){
-	var lang = ysdk.environment.i18n.lang;
-	var bufferSize = lengthBytesUTF8(lang) + 1;
-	var buffer = _malloc(bufferSize);
-	stringToUTF8(lang, buffer, bufferSize);
-	return buffer;
-  },
-  
+      
   ShowAdv: function(){
 	ysdk.adv.showFullscreenAdv({
         callbacks: {
@@ -85,11 +67,5 @@ mergeInto(LibraryManager.library, {
         }
     }
 })
-  },
-  
-  GetTypePlatformDevice: function(){
-	    let deviceType = ysdk.deviceInfo.type;
-        myGameInstance.SendMessage("Yandex", "SetPlatformDevice", deviceType);
-  }
-  
+  },  
 });

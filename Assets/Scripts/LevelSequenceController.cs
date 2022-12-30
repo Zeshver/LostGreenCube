@@ -43,17 +43,7 @@ namespace Runner
             base.Awake();
 
             LoadExtern();
-        }        
-
-        //private void Update()
-        //{
-        //    if (Input.GetKey(KeyCode.F))
-        //    {
-        //        PlayerPrefs.DeleteAll();
-        //        m_PlayerSaveData.m_LevelIndex = 0;
-        //        SaveYandexDate();
-        //    }
-        //}
+        }
 
         public void StartEpisode(Level episode)
         {
