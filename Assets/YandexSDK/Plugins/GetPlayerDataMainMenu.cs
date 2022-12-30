@@ -15,9 +15,14 @@ namespace Runner
         [SerializeField] private TextMeshProUGUI m_NameText;
         [SerializeField] private RawImage m_Photo;
 
+        [SerializeField] private int m_IndexAuth;
+
         private void Start()
         {
-            GetPlayerData();
+            if (m_IndexAuth == LevelSequenceController.Instance.m_PlayerSaveData.m_LevelIndex)
+            {
+                GetPlayerData();
+            }
         }
 
         public void SetName(string name)
