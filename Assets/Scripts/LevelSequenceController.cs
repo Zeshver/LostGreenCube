@@ -13,17 +13,17 @@ namespace Runner
     public class LevelSequenceController : SingletonBase<LevelSequenceController>
     {
 
-        [DllImport("__Internal")]
-        private static extern void SaveExtern(string date);
+        //[DllImport("__Internal")]
+        //private static extern void SaveExtern(string date);
 
-        [DllImport("__Internal")]
-        private static extern void LoadExtern();
+        //[DllImport("__Internal")]
+        //private static extern void LoadExtern();
 
-        [DllImport("__Internal")]
-        private static extern void SetToLeaderboard(int value);
+        //[DllImport("__Internal")]
+        //private static extern void SetToLeaderboard(int value);
 
-        [DllImport("__Internal")]
-        private static extern void ShowAdv();
+        //[DllImport("__Internal")]
+        //private static extern void ShowAdv();
 
         public static string MainMenuSceneNickname = "MainMenu";
 
@@ -43,7 +43,7 @@ namespace Runner
 
         private void Start()
         {
-            LoadExtern();
+            //LoadExtern();
         }
 
         public void StartEpisode(Level episode)
@@ -74,7 +74,7 @@ namespace Runner
                 SaveLevel(CurrentEpisode.IndexIsCompleated);
             }
 
-            ShowAdv();
+            //ShowAdv();
 
             ResultPanelController.Instance.ShowResults(LevelStatistics, success);
         }
@@ -107,25 +107,25 @@ namespace Runner
             {
                 m_PlayerSaveData.m_LevelIndex = index;
 
-                SaveYandexDate();
-                SetToLeaderboard(m_PlayerSaveData.m_LevelIndex);
+                //SaveYandexDate();
+                //SetToLeaderboard(m_PlayerSaveData.m_LevelIndex);
             }
 
-            if (m_PlayerSaveData.m_LevelIndex == 5)
-            {
-                Yandex.Instance.RateGameButton();
-            }
+            //if (m_PlayerSaveData.m_LevelIndex == 5)
+            //{
+            //    Yandex.Instance.RateGameButton();
+            //}
         }
 
-        public void SaveYandexDate()
-        {
-            string jsonString = JsonUtility.ToJson(m_PlayerSaveData);
-            SaveExtern(jsonString);
-        }
+        //public void SaveYandexDate()
+        //{
+        //    string jsonString = JsonUtility.ToJson(m_PlayerSaveData);
+        //    SaveExtern(jsonString);
+        //}
 
-        public void LoadYandexDate(string value)
-        {
-            m_PlayerSaveData = JsonUtility.FromJson<PlayerSaveData>(value);
-        }
+        //public void LoadYandexDate(string value)
+        //{
+        //    m_PlayerSaveData = JsonUtility.FromJson<PlayerSaveData>(value);
+        //}
     }
 }

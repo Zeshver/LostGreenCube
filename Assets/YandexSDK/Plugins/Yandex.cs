@@ -9,12 +9,12 @@ namespace Runner
 {
     public class Yandex : SingletonBase<Yandex>
     {
-        [DllImport("__Internal")]
-        private static extern void RateGame();
+        //[DllImport("__Internal")]
+        //private static extern void RateGame();
 
-        public void RateGameButton()
-        {
-            RateGame();
-        }                
+        //public void RateGameButton()
+        //{
+        //    RateGame();
+        //}
     }
 }
