@@ -12,6 +12,7 @@ namespace Runner
 
     public class LevelSequenceController : SingletonBase<LevelSequenceController>
     {
+
         [DllImport("__Internal")]
         private static extern void SaveExtern(string date);
 
@@ -38,10 +39,10 @@ namespace Runner
 
         public PlayerSaveData m_PlayerSaveData;
 
-        protected override void Awake()
-        {
-            base.Awake();
+        bool load;                
 
+        private void Start()
+        {
             LoadExtern();
         }
 

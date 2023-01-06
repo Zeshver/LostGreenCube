@@ -5329,7 +5329,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 0, y: 249.99982}
+  m_AnchoredPosition: {x: 0, y: 249.99994}
   m_SizeDelta: {x: 1000, y: 5000}
   m_Pivot: {x: 0.5, y: 1}
 --- !u!1 &44077350
@@ -5687,7 +5687,7 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 126802322}
         m_TargetAssemblyTypeName: Runner.OnButtonInput, Assembly-CSharp
-        m_MethodName: OnButtonPlayMusic
+        m_MethodName: OnButtonPauseMusic
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -6413,7 +6413,7 @@ AudioSource:
   m_PlayOnAwake: 1
   m_Volume: 0.5
   m_Pitch: 1
-  Loop: 0
+  Loop: 1
   Mute: 0
   Spatialize: 0
   SpatializePostEffects: 0
@@ -6636,8 +6636,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   m_PCControllButton: {fileID: 5334656499006187877}
   m_MobileControllButton: {fileID: 5681820837864978422}
-  m_PlayMusic: {fileID: 75478514}
-  m_PauseMusic: {fileID: 1899248944}
+  m_PlayMusic: {fileID: 1899248944}
+  m_PauseMusic: {fileID: 75478514}
   m_PauseMusicObject: {fileID: 123856201}
 --- !u!1 &134679066
 GameObject:
@@ -11411,7 +11411,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 30c105cd7bfd34a49aa064b9c9696a0b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_DoNotDestroyOnLoad: 1
   m_PlayerSaveData:
     m_LevelIndex: 0
 --- !u!4 &441484799
@@ -26320,7 +26319,7 @@ MonoBehaviour:
   m_HandleRect: {fileID: 402408135}
   m_Direction: 2
   m_Value: 1
-  m_Size: 0.099999316
+  m_Size: 0.09999941
   m_NumberOfSteps: 0
   m_OnValueChanged:
     m_PersistentCalls:
@@ -33140,7 +33139,7 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 126802322}
         m_TargetAssemblyTypeName: Runner.OnButtonInput, Assembly-CSharp
-        m_MethodName: OnButtonPauseMusic
+        m_MethodName: OnButtonPlayMusic
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}

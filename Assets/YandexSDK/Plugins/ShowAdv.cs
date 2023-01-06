@@ -25,11 +25,13 @@ namespace Runner
 
         public void PauseGame()
         {
+            SetPlayerInput.Instance.m_ControlMusic = ControlMusic.Pause;
             Time.timeScale = 0;
         }
 
         public void PlayGame()
         {
+            SetPlayerInput.Instance.m_ControlMusic = ControlMusic.Play;
             Time.timeScale = 1;
         }
     }

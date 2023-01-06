@@ -38,11 +38,17 @@ mergeInto(LibraryManager.library, {
 	ysdk.adv.showFullscreenAdv({
         callbacks: {
             onClose: function(wasShown) {
+			console.log('Video ad closed.');
+		    myGameInstance.SendMessage("SharedGameObjects", "PlayGame");
             // some action after close
             },
             onError: function(error) {
             // some action on error
-            }
+            },
+			onOpen: function (wasOpen){
+			console.log('Video ad open.');
+		    myGameInstance.SendMessage("SharedGameObjects", "PauseGame");
+			}
         }
     })
    },
