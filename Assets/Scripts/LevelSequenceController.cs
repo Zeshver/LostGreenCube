@@ -1,4 +1,3 @@
-using System.Runtime.InteropServices;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
@@ -12,19 +11,6 @@ namespace Runner
 
     public class LevelSequenceController : SingletonBase<LevelSequenceController>
     {
-
-        //[DllImport("__Internal")]
-        //private static extern void SaveExtern(string date);
-
-        //[DllImport("__Internal")]
-        //private static extern void LoadExtern();
-
-        //[DllImport("__Internal")]
-        //private static extern void SetToLeaderboard(int value);
-
-        //[DllImport("__Internal")]
-        //private static extern void ShowAdv();
-
         public static string MainMenuSceneNickname = "MainMenu";
 
         public Level CurrentEpisode { get; private set; }
@@ -38,13 +24,6 @@ namespace Runner
         public static Player PlayerCube { get; set; }
 
         public PlayerSaveData m_PlayerSaveData;
-
-        bool load;                
-
-        private void Start()
-        {
-            //LoadExtern();
-        }
 
         public void StartEpisode(Level episode)
         {
@@ -73,8 +52,6 @@ namespace Runner
             {
                 SaveLevel(CurrentEpisode.IndexIsCompleated);
             }
-
-            //ShowAdv();
 
             ResultPanelController.Instance.ShowResults(LevelStatistics, success);
         }
@@ -106,26 +83,7 @@ namespace Runner
             if (m_PlayerSaveData.m_LevelIndex < index)
             {
                 m_PlayerSaveData.m_LevelIndex = index;
-
-                //SaveYandexDate();
-                //SetToLeaderboard(m_PlayerSaveData.m_LevelIndex);
             }
-
-            //if (m_PlayerSaveData.m_LevelIndex == 5)
-            //{
-            //    Yandex.Instance.RateGameButton();
-            //}
         }
-
-        //public void SaveYandexDate()
-        //{
-        //    string jsonString = JsonUtility.ToJson(m_PlayerSaveData);
-        //    SaveExtern(jsonString);
-        //}
-
-        //public void LoadYandexDate(string value)
-        //{
-        //    m_PlayerSaveData = JsonUtility.FromJson<PlayerSaveData>(value);
-        //}
     }
 }
