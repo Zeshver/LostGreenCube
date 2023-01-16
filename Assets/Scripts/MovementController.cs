@@ -61,7 +61,7 @@ namespace Runner
                 {
                     if (SetPlayerInput.Instance.m_ControlMode == ControlMode.Mobile && SetPlayerInput.Instance.m_ControlMode != ControlMode.Keyboard)
                     {
-                        if (cube.PlayerInputTransform == CubeController.InputTransform.UpDown && AllCubeControllers != null)
+                        if (cube.PlayerCubeMode == CubeController.CubeMode.Main && AllCubeControllers != null)
                         {
                             cube.GetComponent<Rigidbody>().velocity -= m_MobileMoveDirectionUpDown;
                         }
@@ -77,7 +77,7 @@ namespace Runner
                 {
                     if (SetPlayerInput.Instance.m_ControlMode == ControlMode.Mobile && SetPlayerInput.Instance.m_ControlMode != ControlMode.Keyboard)
                     {
-                        if (cube.PlayerInputTransform == CubeController.InputTransform.UpDown && AllCubeControllers != null)
+                        if (cube.PlayerCubeMode == CubeController.CubeMode.Main && AllCubeControllers != null)
                         {
                             cube.GetComponent<Rigidbody>().velocity += m_MobileMoveDirectionUpDown;
                         }
@@ -93,7 +93,7 @@ namespace Runner
                 {
                     if (SetPlayerInput.Instance.m_ControlMode == ControlMode.Mobile && SetPlayerInput.Instance.m_ControlMode != ControlMode.Keyboard)
                     {
-                        if (cube.PlayerInputTransform == CubeController.InputTransform.LeftRight && AllCubeControllers != null)
+                        if (cube.PlayerCubeMode == CubeController.CubeMode.Other && AllCubeControllers != null)
                         {
                             cube.GetComponent<Rigidbody>().velocity -= m_MobileMoveDirectionLeftRight;
                         }
@@ -109,7 +109,7 @@ namespace Runner
                 {
                     if (SetPlayerInput.Instance.m_ControlMode == ControlMode.Mobile && SetPlayerInput.Instance.m_ControlMode != ControlMode.Keyboard)
                     {
-                        if (cube.PlayerInputTransform == CubeController.InputTransform.LeftRight && AllCubeControllers != null)
+                        if (cube.PlayerCubeMode == CubeController.CubeMode.Other && AllCubeControllers != null)
                         {
                             cube.GetComponent<Rigidbody>().velocity += m_MobileMoveDirectionLeftRight;
                         }
@@ -122,7 +122,7 @@ namespace Runner
         {
             foreach (var cube in AllCubeControllers)
             {
-                if (cube.PlayerInputTransform == CubeController.InputTransform.UpDown && AllCubeControllers != null)
+                if (cube.PlayerCubeMode == CubeController.CubeMode.Main && AllCubeControllers != null)
                 {
                     if (Input.GetKey(KeyCode.W))
                     {
@@ -145,7 +145,7 @@ namespace Runner
                     }
                 }
 
-                if (cube.PlayerInputTransform == CubeController.InputTransform.LeftRight && AllCubeControllers != null)
+                if (cube.PlayerCubeMode == CubeController.CubeMode.Other && AllCubeControllers != null)
                 {
                     if (Input.GetKey(KeyCode.A))
                     {

@@ -7,6 +7,7 @@ namespace Runner
     {
         [SerializeField] private AudioSource m_AudioSource;
 
+        [Header("Sounds")]
         [SerializeField] private AudioClip m_AudioClipButton;
         public AudioClip AudioClipButton => m_AudioClipButton;
 

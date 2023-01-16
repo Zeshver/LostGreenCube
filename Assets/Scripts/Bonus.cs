@@ -7,9 +7,9 @@ namespace Runner
     {
         private void OnTriggerEnter(Collider collision)
         {
-            PickUp pickUp = collision.GetComponent<PickUp>();
+            CubeController pickUp = collision.GetComponent<CubeController>();
 
-            if (pickUp != null && pickUp.Mode == PickUp.PickUpMode.AddScore)
+            if (pickUp != null && pickUp.PlayerCubeMode == CubeController.CubeMode.Main)
             {
                 OnPickeUp();
 
@@ -18,7 +18,7 @@ namespace Runner
                 Sounds.Instance.PlaySounds(Sounds.Instance.AudioClipPickUp);
             }
 
-            if (pickUp != null && pickUp.Mode == PickUp.PickUpMode.Destroy)
+            if (pickUp != null && pickUp.PlayerCubeMode == CubeController.CubeMode.Other)
             {
                 Destroy(gameObject);
 

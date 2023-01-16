@@ -3,7 +3,7 @@ using UnityEngine;
 namespace Runner
 {
     [RequireComponent(typeof(AudioSource))]
-    public class SoundMusicController : MonoBehaviour
+    public class MusicController : MonoBehaviour
     {
         [SerializeField] private AudioSource m_AudioSourceMusic;
 
