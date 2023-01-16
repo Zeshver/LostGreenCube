@@ -19,7 +19,7 @@ namespace Runner
 
         public void OnStartEpisodeButtonClicked()
         {
-            SoundButton.Instance.OnButtonSound();
+            Sounds.Instance.PlaySounds(Sounds.Instance.AudioClipButton);
 
             LevelSequenceController.Instance.StartEpisode(m_Level);
         }

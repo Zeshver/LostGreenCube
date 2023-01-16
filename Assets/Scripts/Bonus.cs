@@ -15,7 +15,7 @@ namespace Runner
 
                 Destroy(gameObject);
 
-                SoundPickUp.Instance.PlaySoundPickup();
+                Sounds.Instance.PlaySounds(Sounds.Instance.AudioClipPickUp);
             }
 
             if (pickUp != null && pickUp.Mode == PickUp.PickUpMode.Destroy)

@@ -45,7 +45,7 @@ namespace Runner
             m_PCControllButton.SetActive(false);
             m_MobileControllButton.SetActive(true);
 
-            SoundButton.Instance.OnButtonSound();
+            Sounds.Instance.PlaySounds(Sounds.Instance.AudioClipButton);
         }
 
         public void OnButtonMobileController()
@@ -54,7 +54,7 @@ namespace Runner
             m_MobileControllButton.SetActive(false);
             m_PCControllButton.SetActive(true);
 
-            SoundButton.Instance.OnButtonSound();
+            Sounds.Instance.PlaySounds(Sounds.Instance.AudioClipButton);
         }
 
         public void OnButtonPlayMusic()
@@ -64,7 +64,7 @@ namespace Runner
             m_PauseMusic.SetActive(true);
             m_PauseMusicObject.SetActive(true);
 
-            SoundButton.Instance.OnButtonSound();
+            Sounds.Instance.PlaySounds(Sounds.Instance.AudioClipButton);
         }
 
         public void OnButtonPauseMusic()
@@ -74,7 +74,7 @@ namespace Runner
             m_PauseMusic.SetActive(false);
             m_PauseMusicObject.SetActive(false);
 
-            SoundButton.Instance.OnButtonSound();
+            Sounds.Instance.PlaySounds(Sounds.Instance.AudioClipButton);
         }
     }
 }

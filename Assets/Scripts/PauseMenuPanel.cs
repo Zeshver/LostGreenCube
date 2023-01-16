@@ -12,7 +12,7 @@ namespace Runner
 
         public void OnButtonShowPause()
         {
-            SoundButton.Instance.OnButtonSound();
+            Sounds.Instance.PlaySounds(Sounds.Instance.AudioClipButton);
 
             Time.timeScale = 0;
             gameObject.SetActive(true);
@@ -20,7 +20,7 @@ namespace Runner
 
         public void OnButtonContinue()
         {
-            SoundButton.Instance.OnButtonSound();
+            Sounds.Instance.PlaySounds(Sounds.Instance.AudioClipButton);
 
             Time.timeScale = 1;
             gameObject.SetActive(false);
@@ -28,7 +28,7 @@ namespace Runner
 
         public void OnButtonMainMenu()
         {
-            SoundButton.Instance.OnButtonSound();
+            Sounds.Instance.PlaySounds(Sounds.Instance.AudioClipButton);
 
             Time.timeScale = 1;
             gameObject.SetActive(false);
@@ -38,7 +38,7 @@ namespace Runner
 
         public void OnButtonRestart()
         {
-            SoundButton.Instance.OnButtonSound();
+            Sounds.Instance.PlaySounds(Sounds.Instance.AudioClipButton);
 
             LevelSequenceController.Instance.RestartLevel();
         }

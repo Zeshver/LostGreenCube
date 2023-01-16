@@ -36,7 +36,7 @@ namespace Runner
 
         public void OnButtonNextAction()
         {
-            SoundButton.Instance.OnButtonSound();
+            Sounds.Instance.PlaySounds(Sounds.Instance.AudioClipButton);
 
             gameObject.SetActive(false);
 
