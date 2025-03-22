@@ -850,7 +850,7 @@ PrefabInstance:
     - target: {fileID: 615686878635674713, guid: 15e6f72982183d141a7cab1212343240, type: 3}
       propertyPath: m_HelpPanel.Array.data[0]
       value: 
-      objectReference: {fileID: 8022456552220256108}
+      objectReference: {fileID: 0}
     - target: {fileID: 1412010009516027881, guid: 15e6f72982183d141a7cab1212343240, type: 3}
       propertyPath: time
       value: 0
@@ -894,8 +894,3 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 15e6f72982183d141a7cab1212343240, type: 3}
---- !u!1 &8022456552220256108 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 7709980522756281825, guid: 15e6f72982183d141a7cab1212343240, type: 3}
-  m_PrefabInstance: {fileID: 8022456552220256107}
-  m_PrefabAsset: {fileID: 0}

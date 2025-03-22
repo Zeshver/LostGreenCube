@@ -691,11 +691,11 @@ PrefabInstance:
     - target: {fileID: 615686878635674713, guid: 15e6f72982183d141a7cab1212343240, type: 3}
       propertyPath: m_HelpPanel
       value: 
-      objectReference: {fileID: 2135700109}
+      objectReference: {fileID: 0}
     - target: {fileID: 615686878635674713, guid: 15e6f72982183d141a7cab1212343240, type: 3}
       propertyPath: m_HelpPanel.Array.data[0]
       value: 
-      objectReference: {fileID: 2135700109}
+      objectReference: {fileID: 0}
     - target: {fileID: 733865887381511539, guid: 15e6f72982183d141a7cab1212343240, type: 3}
       propertyPath: m_audioClip
       value: 
@@ -1039,85 +1039,3 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: fa0201ad0b280814cac976aaa473704a, type: 3}
---- !u!1 &2135700109 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 3529284116639036129, guid: 54a8a176acabda64a812d31460c83abd, type: 3}
-  m_PrefabInstance: {fileID: 6291394187831648161}
-  m_PrefabAsset: {fileID: 0}
---- !u!1001 &6291394187831648161
-PrefabInstance:
-  m_ObjectHideFlags: 0
-  serializedVersion: 2
-  m_Modification:
-    m_TransformParent: {fileID: 0}
-    m_Modifications:
-    - target: {fileID: 3401763130148269034, guid: 54a8a176acabda64a812d31460c83abd, type: 3}
-      propertyPath: m_RootOrder
-      value: 14
-      objectReference: {fileID: 0}
-    - target: {fileID: 3401763130148269034, guid: 54a8a176acabda64a812d31460c83abd, type: 3}
-      propertyPath: m_LocalPosition.x
-      value: 6
-      objectReference: {fileID: 0}
-    - target: {fileID: 3401763130148269034, guid: 54a8a176acabda64a812d31460c83abd, type: 3}
-      propertyPath: m_LocalPosition.y
-      value: 3
-      objectReference: {fileID: 0}
-    - target: {fileID: 3401763130148269034, guid: 54a8a176acabda64a812d31460c83abd, type: 3}
-      propertyPath: m_LocalPosition.z
-      value: -5
-      objectReference: {fileID: 0}
-    - target: {fileID: 3401763130148269034, guid: 54a8a176acabda64a812d31460c83abd, type: 3}
-      propertyPath: m_LocalRotation.w
-      value: 0.7071068
-      objectReference: {fileID: 0}
-    - target: {fileID: 3401763130148269034, guid: 54a8a176acabda64a812d31460c83abd, type: 3}
-      propertyPath: m_LocalRotation.x
-      value: 0.7071068
-      objectReference: {fileID: 0}
-    - target: {fileID: 3401763130148269034, guid: 54a8a176acabda64a812d31460c83abd, type: 3}
-      propertyPath: m_LocalRotation.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 3401763130148269034, guid: 54a8a176acabda64a812d31460c83abd, type: 3}
-      propertyPath: m_LocalRotation.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 3401763130148269034, guid: 54a8a176acabda64a812d31460c83abd, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.x
-      value: 90
-      objectReference: {fileID: 0}
-    - target: {fileID: 3401763130148269034, guid: 54a8a176acabda64a812d31460c83abd, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 3401763130148269034, guid: 54a8a176acabda64a812d31460c83abd, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 3529284116639036129, guid: 54a8a176acabda64a812d31460c83abd, type: 3}
-      propertyPath: m_Name
-      value: Point Light
-      objectReference: {fileID: 0}
-    - target: {fileID: 3529284116639036129, guid: 54a8a176acabda64a812d31460c83abd, type: 3}
-      propertyPath: m_IsActive
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 3835006031378095554, guid: 54a8a176acabda64a812d31460c83abd, type: 3}
-      propertyPath: m_Range
-      value: 6
-      objectReference: {fileID: 0}
-    - target: {fileID: 3835006031378095554, guid: 54a8a176acabda64a812d31460c83abd, type: 3}
-      propertyPath: m_Intensity
-      value: 4
-      objectReference: {fileID: 0}
-    - target: {fileID: 3835006031378095554, guid: 54a8a176acabda64a812d31460c83abd, type: 3}
-      propertyPath: m_SpotAngle
-      value: 100
-      objectReference: {fileID: 0}
-    - target: {fileID: 3835006031378095554, guid: 54a8a176acabda64a812d31460c83abd, type: 3}
-      propertyPath: m_InnerSpotAngle
-      value: 1
-      objectReference: {fileID: 0}
-    m_RemovedComponents: []
-  m_SourcePrefab: {fileID: 100100000, guid: 54a8a176acabda64a812d31460c83abd, type: 3}
